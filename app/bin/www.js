@@ -1,5 +1,5 @@
 const app = require('../app');
-const PORT = 3005;
+const PORT = process.env.PORT;
 
 app.listen(PORT,() => {
     console.log("서버가 가동되었습니다.");

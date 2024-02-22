@@ -1,8 +1,12 @@
 const express = require('express');
 const morgan = require('morgan');
-const bodyParser = require("body-parser");
-const app = express();
+const bodyParser = require('body-parser');
+const dotenv = require('dotenv');
+const mysql = require('mysql2');
 
+dotenv.config();
+
+const app = express();
 
 //라우팅
 const home = require('./src/routes/home');
